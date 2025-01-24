@@ -10,8 +10,24 @@
 
 <body class="newspaperExample">
     <main>
+        <div class="toggle-menu" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+                <a href="#">Inicio</a>
+                <a href="#">Nacionales</a>
+                <a href="#">Internacionales</a>
+                <a href="#">Deportes</a>
+                <a href="#">Economía</a>
+                <a href="#">Cultura</a>
+                <a href="#">Tecnología</a>
+                <a href="#">Opinión</a>
+                <a href="#">Más</a>
+        </div>
         <section class="main-header">
-            <h3>Editorial <br> Progresa</h3>
+            <h3>Editorial Progresa</h3>
             <div class="header-title">
                 <h1>Noticias Progresa</h1>
                 <em>La mejor información de la red</em>
@@ -76,6 +92,14 @@
 
         </section>
     </main>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+        });
+        </script>
 </body>
 
 </html>

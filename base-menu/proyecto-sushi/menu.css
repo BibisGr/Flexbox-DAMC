@@ -1,0 +1,113 @@
+:root {
+  --bg-color: #f89c27;
+  --text-color: black;
+  --text-color-invert: white;
+}
+body {
+  background-color: var(--bg-color);
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1.6;
+  display: flex;
+}
+header {
+  margin-top: 20px;
+  width: 35%;
+}
+.rrss{
+  display: flex;
+  justify-content: center;
+}
+.rrss img{
+  width: 8%;
+}
+.principal-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.principal-info img {
+  width: 15%;
+}
+.principal-info h1 {
+  font-size: 2.5em;
+  margin: -10px 0;
+}
+.principal-info h2 {
+  font-weight: lighter;
+  font-size: 1em;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav h3 {
+  color: var(--text-color-invert);
+  margin: 5px 0;
+  font-size: 1.5em;
+  border-bottom: var(--text-color) 1px solid;
+  margin-top: 10px;
+}
+nav p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+main {
+  width: 65%;
+  background-color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: white 1px solid;
+}
+main h1 {
+  color: var(--bg-color);
+  font-size: 2.5em;
+  border-bottom: var(--bg-color) 1px solid;
+}
+main h2 {
+  color: var(--text-color-invert);
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+main hr {
+  border: #f89c27 1px solid;
+  width: 100%;
+  margin-top: 30px;
+}
+main p {
+  color: var(--text-color-invert);
+}
+.options-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.option-element {
+  width: 30%;
+  border: #f89c27 1px solid;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.option-element img{
+  width: 50%;
+}
+.option-element h3{
+  margin: 0;
+  color: var(--text-color-invert);
+  text-align: center;
+  border-bottom: var(--bg-color) 1px solid;
+  width: 90%;
+}
+.option-element p{
+  color: var(--text-color-invert);
+  margin: 2px;
+}
+
